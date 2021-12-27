@@ -20,7 +20,7 @@ const Login = () => {
     const [password, setPassword] = useState("");
 
     const handleLogin = (e) => {
-        Axios.post("http://localhost:5000/login", {
+        Axios.post("https://chatly-application.herokuapp.com/login", {
             username: username,
             password: password
         }).then(function (response) {

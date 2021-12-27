@@ -23,7 +23,7 @@ const Signup = () => {
     const [password, setPassword] = useState("");
 
     const handleSignUp = (e) => {
-        Axios.post("http://localhost:5000/register/newUser", {
+        Axios.post("https://chatly-application.herokuapp.com/register/newUser", {
             email: email,
             username: username,
             password: password

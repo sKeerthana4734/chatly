@@ -22,7 +22,7 @@ const Otp = () => {
   const [otp, setOtp] = React.useState("");
 
   const handleOtpSubmit = (e) => {
-    Axios.post("http://localhost:5000/otp/verifyOtp", {
+    Axios.post("https://chatly-application.herokuapp.com/otp/verifyOtp", {
       otp: otp
     }).then((response) => {
       console.log(response);
@@ -59,7 +59,7 @@ const Otp = () => {
   }
 
   const handleResendOtp = (e) => {
-    Axios.post("http://localhost:5000/otp/resend-Otp");
+    Axios.post("https://chatly-application.herokuapp.com/otp/resend-Otp");
     toast.info('OTP Resent', {
       position: "top-center",
       autoClose: 5000,
